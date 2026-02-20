@@ -1,0 +1,100 @@
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:1313:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:1313:7: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2287:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2287:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2301:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2301:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2315:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:2315:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:3944:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:3944:7: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9771:5: warning: Added loop label VITIS_LOOP_9_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 28 * 28; i++) {
+    ^~~
+    VITIS_LOOP_9_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9771:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9788:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 28; i++) {
+ ^~~
+ VITIS_LOOP_26_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9788:2: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9789:9: warning: Added loop label VITIS_LOOP_27_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 28; j++) {
+        ^~~
+        VITIS_LOOP_27_2: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9789:9: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9796:5: warning: Added loop label VITIS_LOOP_34_3:   [xilinx-label-all-loops]
+    for (int f = 0; f < 8; f++) {
+    ^~~
+    VITIS_LOOP_34_3: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9796:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9797:9: warning: Added loop label VITIS_LOOP_35_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < (28 - 3 + 1) / 2; i++) {
+        ^~~
+        VITIS_LOOP_35_4: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9797:9: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9798:13: warning: Added loop label VITIS_LOOP_36_5:   [xilinx-label-all-loops]
+            for (int j = 0; j < (28 - 3 + 1) / 2; j++) {
+            ^~~
+            VITIS_LOOP_36_5: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9798:13: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9803:17: warning: Added loop label VITIS_LOOP_41_6:   [xilinx-label-all-loops]
+                for (int pi = 0; pi < 2; pi++) {
+                ^~~
+                VITIS_LOOP_41_6: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9803:17: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9804:21: warning: Added loop label VITIS_LOOP_42_7:   [xilinx-label-all-loops]
+                    for (int pj = 0; pj < 2; pj++) {
+                    ^~~
+                    VITIS_LOOP_42_7: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9804:21: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9811:25: warning: Added loop label VITIS_LOOP_49_8:   [xilinx-label-all-loops]
+                        for (int ki = 0; ki < 3; ki++) {
+                        ^~~
+                        VITIS_LOOP_49_8: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9811:25: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9812:29: warning: Added loop label VITIS_LOOP_50_9:   [xilinx-label-all-loops]
+                            for (int kj = 0; kj < 3; kj++) {
+                            ^~~
+                            VITIS_LOOP_50_9: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9812:29: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9835:5: warning: Added loop label VITIS_LOOP_73_1:   [xilinx-label-all-loops]
+    for (int f = 0; f < 8; f++) {
+    ^~~
+    VITIS_LOOP_73_1: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9835:5: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9836:9: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < (28 - 3 + 1) / 2; i++) {
+        ^~~
+        VITIS_LOOP_74_2: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9836:9: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9837:13: warning: Added loop label VITIS_LOOP_75_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < (28 - 3 + 1) / 2; j++) {
+            ^~~
+            VITIS_LOOP_75_3: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9837:13: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9841:17: warning: Added loop label VITIS_LOOP_79_4:   [xilinx-label-all-loops]
+                for (int c = 0; c < 10; c++) {
+                ^~~
+                VITIS_LOOP_79_4: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9841:17: note: FIX-IT applied suggested code changes
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9850:5: warning: Added loop label VITIS_LOOP_88_5:   [xilinx-label-all-loops]
+    for (int c = 0; c < 10; c++) {
+    ^~~
+    VITIS_LOOP_88_5: 
+C:\Users\student\Desktop\HackArm\cnn_accl\cnn_accl\hls\.autopilot\db\cnn.pp.0.cpp:9850:5: note: FIX-IT applied suggested code changes

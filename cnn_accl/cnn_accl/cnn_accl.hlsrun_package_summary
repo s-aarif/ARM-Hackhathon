@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn_accl\\cnn_accl.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/14/26 12:55:56",
+ "timestampMillis": "1527430113",
+ "buildStep": {
+  "cmdId": "361ee724-7166-4ff1-91c7-146bab4083b8",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn_accl\\logs\\cnn_accl.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\student\\Desktop\\HackArm\\cnn_accl\\hls_config.cfg --work_dir cnn_accl ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl\\hls_config.cfg",
+   "--work_dir",
+   "cnn_accl"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/26 12:55:56",
+ "timestampMillis": "1527430114",
+ "status": {
+  "cmdId": "361ee724-7166-4ff1-91c7-146bab4083b8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/14/26 12:56:16",
+ "timestampMillis": "1527450883",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cnn_accelerator",
+     "file": "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn_accl\\cnn_accelerator.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn.cpp",
+     "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/14/26 12:56:16",
+ "timestampMillis": "1527450885",
+ "buildStep": {
+  "cmdId": "71850197-702e-45f7-aa5a-29b65faa65d9",
+  "name": "export_design",
+  "logFile": "C:/Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn_accl\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/26 12:56:16",
+ "timestampMillis": "1527450886",
+ "status": {
+  "cmdId": "71850197-702e-45f7-aa5a-29b65faa65d9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/26 12:59:02",
+ "timestampMillis": "1527616803",
+ "status": {
+  "cmdId": "71850197-702e-45f7-aa5a-29b65faa65d9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/26 12:59:04",
+ "timestampMillis": "1527618668",
+ "status": {
+  "cmdId": "361ee724-7166-4ff1-91c7-146bab4083b8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/26 12:59:04",
+ "timestampMillis": "1527618769",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/26 12:59:04",
+ "timestampMillis": "1527618770",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

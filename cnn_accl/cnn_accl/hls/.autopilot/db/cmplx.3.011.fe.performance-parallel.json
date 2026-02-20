@@ -1,0 +1,57 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 2 1",
+    "file": "cnn.cpp",
+    "fileloc": 102,
+    "instructions": 25,
+    "name": "cnn_accelerator",
+    "total_instructions": 753
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "cnn.cpp",
+    "fileloc": 66,
+    "instructions": 113,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "dense_and_write",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 133
+  },
+  "2": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "cnn.cpp",
+    "fileloc": 19,
+    "instructions": 566,
+    "loads": {
+      "L": 144
+    },
+    "name": "conv_and_pool",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 566
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "cnn.cpp",
+    "fileloc": 8,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "name": "read_input",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 29
+  }
+}

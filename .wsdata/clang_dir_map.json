@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\student\\Desktop\\HackArm",
+  "mapping": {
+    "cnn_accl\\cnn.h": "cnn_accl",
+    "cnn_accl\\cnn.cpp": "cnn_accl"
+  }
+}

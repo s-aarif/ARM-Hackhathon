@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Feb 14 12:56:30 2026
+# Process ID: 5876
+# Current directory: C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/vivado.log
+# Journal file: C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip\vivado.jou
+# Running On        :VLSI-25
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-4590S CPU @ 3.00GHz
+# CPU Frequency     :2993 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8512 MB
+# Swap memory       :1919 MB
+# Total Virtual     :10431 MB
+# Available Virtual :1529 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/hls_data.json outdir=C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip srcdir=C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/misc
+INFO: Copied 34 verilog file(s) to C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/hdl/verilog
+INFO: Copied 28 vhdl file(s) to C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/drivers
+Generating 3 subcores in C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/hdl/ip.tmp:
+impl/misc/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+impl/misc/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+impl/misc/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 620.082 ; gain = 197.910
+INFO: Using COE_DIR=C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/hdl/verilog
+INFO: Generating cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 675.129 ; gain = 55.047
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: Done generating cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+INFO: Generating cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: Done generating cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+INFO: Generating cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+INFO: Done generating cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+INFO: Import ports from HDL: C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/hdl/vhdl/cnn_accelerator.vhd (cnn_accelerator)
+INFO: Add axi4lite interface s_axi_ctrl
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: Add axi4stream interface in_stream
+INFO: Add axi4stream interface out_stream
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip/xilinx_com_hls_cnn_accelerator_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 14 12:58:56 2026...

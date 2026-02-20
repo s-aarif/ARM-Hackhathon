@@ -1,0 +1,3 @@
+C:/Users/student/Desktop/HackArm/cnn_platform/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/student/Desktop/HackArm/cnn_platform/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/student/Desktop/HackArm/cnn_platform/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,41 @@
+<pragmas>
+<pragma file="cnn.cpp" line="89" pragmaType="pipeline" parentfunction="dense_and_write" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="76" pragmaType="pipeline" parentfunction="dense_and_write" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="68" pragmaType="array_partition" parentfunction="dense_and_write" dim="1" factor="0" mode="complete" dynamic="0" variable="dense_out"/>
+<pragma file="cnn.cpp" line="69" pragmaType="array_partition" parentfunction="dense_and_write" dim="1" factor="0" mode="complete" dynamic="0" variable="fc_weights"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="cnn.cpp" line="37" pragmaType="pipeline" parentfunction="conv_and_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="28" pragmaType="pipeline" parentfunction="conv_and_pool" off="0" ii="1" rewind="0" style=""/>
+<pragma file="cnn.cpp" line="22" pragmaType="array_partition" parentfunction="conv_and_pool" dim="0" factor="3" mode="block" dynamic="0" variable="image"/>
+<pragma file="cnn.cpp" line="23" pragmaType="array_partition" parentfunction="conv_and_pool" dim="0" factor="0" mode="complete" dynamic="0" variable="conv_weights"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="cnn.cpp" line="112" pragmaType="dataflow" parentfunction="cnn_accelerator" disable_start_propagation="0"/>
+<pragma file="cnn.cpp" line="103" pragmaType="interface" parentfunction="cnn_accelerator" mode="axis" port="in_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="cnn.cpp" line="104" pragmaType="interface" parentfunction="cnn_accelerator" mode="axis" port="out_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="cnn.cpp" line="105" pragmaType="interface" parentfunction="cnn_accelerator" mode="s_axilite" port="" bundle="ctrl" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream(char const*)" off="0" region="0" recursive="0"/>
+<pragma file="cnn.cpp" line="10" pragmaType="pipeline" parentfunction="read_input" off="0" ii="1" rewind="0" style=""/>
+</pragmas>

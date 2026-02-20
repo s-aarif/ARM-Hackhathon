@@ -1,0 +1,948 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Feb 14 13:22:24 2026
+# Process ID: 8696
+# Current directory: C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1
+# Command line: vivado.exe -log design_1_cnn_accelerator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cnn_accelerator_0_0.tcl
+# Log file: C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/design_1_cnn_accelerator_0_0.vds
+# Journal file: C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1\vivado.jou
+# Running On        :VLSI-25
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-4590S CPU @ 3.00GHz
+# CPU Frequency     :2993 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8512 MB
+# Swap memory       :7330 MB
+# Total Virtual     :15843 MB
+# Available Virtual :6280 MB
+#-----------------------------------------------------------
+source design_1_cnn_accelerator_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 619.797 ; gain = 198.559
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/student/Desktop/HackArm/cnn_accl/cnn_accl/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cnn_accelerator_0_0
+Command: synth_design -top design_1_cnn_accelerator_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3656
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 2178.488 ; gain = 405.344
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10515] begin/end is required for generate-for in this mode of Verilog [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:72]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cnn_accelerator_0_0' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ip/design_1_cnn_accelerator_0_0/synth/design_1_cnn_accelerator_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_ctrl_s_axi' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_ctrl_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_ctrl_s_axi.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_ctrl_s_axi' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_ctrl_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_read_input' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_read_input.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_flow_control_loop_pipe' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_flow_control_loop_pipe' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_regslice_both' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_regslice_both' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_regslice_both__parameterized0' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_regslice_both__parameterized0' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_regslice_both__parameterized1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_regslice_both__parameterized1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_read_input' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_read_input.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_conv_and_pool' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_5ns_5ns_5_9_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_5ns_5ns_5_9_1_divider' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_5ns_5ns_5_9_1_divider' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_5ns_5ns_5_9_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_mul_5ns_7ns_11_1_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_mul_5ns_7ns_11_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_mul_5ns_7ns_11_1_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_mul_5ns_7ns_11_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_flow_control_loop_pipe_sequential_init' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:81887]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:81887]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/ip/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_4ns_4ns_3_8_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_4ns_4ns_3_8_1_divider' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_4ns_4ns_3_8_1_divider' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_4ns_4ns_3_8_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_mul_4ns_6ns_9_1_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_mul_4ns_6ns_9_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_mul_4ns_6ns_9_1_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_mul_4ns_6ns_9_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_4ns_4ns_4_8_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_urem_4ns_4ns_4_8_1_divider' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_4ns_4ns_4_8_1_divider' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_urem_4ns_4ns_4_8_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_sparsemux_7_2_32_1_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_sparsemux_7_2_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_sparsemux_7_2_32_1_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_sparsemux_7_2_32_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_frp_pipeline_valid' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:11]
+WARNING: [Synth 8-11581] system function call 'value$plusargs' not supported [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_frp_pipeline_valid' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_frp_fifoout' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_fifoout.v:11]
+WARNING: [Synth 8-11581] system function call 'value$plusargs' not supported [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_fifoout.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_frp_fifoout' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_fifoout.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_conv_and_pool' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_conv_and_pool.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_dense_and_write' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_88_5' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_88_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_sparsemux_21_4_32_1_1' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_sparsemux_21_4_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_sparsemux_21_4_32_1_1' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_sparsemux_21_4_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_88_5' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write_Pipeline_VITIS_LOOP_88_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_dense_and_write' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_dense_and_write.v:9]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fifo_w32_d2_S' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_fifo_w32_d2_S_ShiftReg' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fifo_w32_d2_S_ShiftReg' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_fifo_w32_d2_S' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_start_for_conv_and_pool_U0' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_conv_and_pool_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_start_for_conv_and_pool_U0_ShiftReg' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_conv_and_pool_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_start_for_conv_and_pool_U0_ShiftReg' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_conv_and_pool_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_start_for_conv_and_pool_U0' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_conv_and_pool_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_start_for_dense_and_write_U0' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_dense_and_write_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnn_accelerator_start_for_dense_and_write_U0_ShiftReg' [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_dense_and_write_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_start_for_dense_and_write_U0_ShiftReg' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_dense_and_write_U0.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator_start_for_dense_and_write_U0' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_start_for_dense_and_write_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_accelerator' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cnn_accelerator_0_0' (0#1) [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ip/design_1_cnn_accelerator_0_0/synth/design_1_cnn_accelerator_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_ctrl_s_axi.v:254]
+WARNING: [Synth 8-6014] Unused sequential element loop[4].divisor_tmp_reg[5] was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:52]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:122]
+WARNING: [Synth 8-6014] Unused sequential element loop[3].divisor_tmp_reg[4] was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:52]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:122]
+WARNING: [Synth 8-6014] Unused sequential element loop[3].divisor_tmp_reg[4] was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:52]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:122]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[0].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[1].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[2].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[3].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[4].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[5].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[6].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[7].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[8].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[9].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[10].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[11].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[12].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[13].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[14].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[15].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[16].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[17].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[18].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[19].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[20].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[21].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[22].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[23].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[24].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[25].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[26].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[27].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[28].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[29].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[30].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[31].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[32].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[33].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[34].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[35].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[36].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[37].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[38].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[39].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[40].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[41].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[42].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[43].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[44].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[45].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[46].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[47].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[48].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[49].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[50].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[51].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[52].v1_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element incr_reg was removed.  [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_frp_pipeline_valid.v:112]
+WARNING: [Synth 8-7129] Port addr[1] in module cnn_accelerator_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_dsp_opt_full is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized66 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_9_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_9_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module fix_mult is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[23] in module fix_mult is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_9_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_9_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_9_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_18_viv__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:01:05 . Memory (MB): peak = 2435.891 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:01:06 . Memory (MB): peak = 2435.891 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:01:06 . Memory (MB): peak = 2435.891 ; gain = 662.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2437.980 ; gain = 2.090
+INFO: [Netlist 29-17] Analyzing 4393 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ip/design_1_cnn_accelerator_0_0/constraints/cnn_accelerator_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2750.383 ; gain = 33.586
+Finished Parsing XDC File [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ip/design_1_cnn_accelerator_0_0/constraints/cnn_accelerator_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2750.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 571 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 131 instances
+  FDE => FDRE: 440 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2794.770 ; gain = 44.387
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:16 ; elapsed = 00:01:58 . Memory (MB): peak = 2794.770 ; gain = 1021.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:16 ; elapsed = 00:01:58 . Memory (MB): peak = 2794.770 ; gain = 1021.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:58 . Memory (MB): peak = 2794.770 ; gain = 1021.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cnn_accelerator_ctrl_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cnn_accelerator_ctrl_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cnn_accelerator_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cnn_accelerator_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cnn_accelerator_regslice_both__parameterized1'
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '5' to '4' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '5' to '4' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '5' to '4' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '5' to '4' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_5ns_5ns_5_9_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].dividend_tmp_reg[4]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_3_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '4' to '3' bits. [c:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.gen/sources_1/bd/design_1/ipshared/42a9/hdl/verilog/cnn_accelerator_urem_4ns_4ns_4_8_1.v:51]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cnn_accelerator_ctrl_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cnn_accelerator_ctrl_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cnn_accelerator_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cnn_accelerator_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cnn_accelerator_regslice_both__parameterized1'
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "cnn_accelerator_conv_and_pool_image_RAM_1WNR_AUTO_1R1W:/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:22 ; elapsed = 00:02:12 . Memory (MB): peak = 2794.770 ; gain = 1021.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1:/cnn_accelerator_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1:/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1:/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1:/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1:/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1:/cnn_accelerator_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_U/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_1_U/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_2_U/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_3_U/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram10_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram11_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram12_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram13_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_4_U/ram14_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram0_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram1_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram2_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram3_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram4_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram5_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram6_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram7_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram8_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/image_5_U/ram9_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__30.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__30.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__33.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__33.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__34.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__34.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__35.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__35.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__36.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__36.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__37.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__37.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__38.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__38.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv__39.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv__39.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_18_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_18_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:47 . Memory (MB): peak = 2794.770 ; gain = 1021.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:08 ; elapsed = 00:04:06 . Memory (MB): peak = 3021.426 ; gain = 1248.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:19 ; elapsed = 00:04:17 . Memory (MB): peak = 3123.277 ; gain = 1350.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:55 ; elapsed = 00:04:54 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U68/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U69/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U70/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U71/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin conv_and_pool_U0/grp_conv_and_pool_Pipeline_VITIS_LOOP_34_3_VITIS_LOOP_35_4_VITIS_LOOP_36_5_fu_82/fmul_32ns_32ns_32_3_max_dsp_1_U72/cnn_accelerator_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst:s_axis_a_tdata[15] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:04 ; elapsed = 00:05:03 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:04 ; elapsed = 00:05:03 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:09 ; elapsed = 00:05:08 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:09 ; elapsed = 00:05:08 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:10 ; elapsed = 00:05:09 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:10 ; elapsed = 00:05:10 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_2843                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2799 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2784                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2740 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2725                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2681 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2666                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2622 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2606                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2556 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2539                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2489 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2472                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2422 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2405                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2355 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2338                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2288 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2271                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2221 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2204                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2154 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2137                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2087 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2070                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_2020 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_2003                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1953 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1936                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1886 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1869                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1819 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1802                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1752 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1735                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1685 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1668                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1618 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1601                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1551 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1534                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1484 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1467                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1417 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1400                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1350 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1333                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1283 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1266                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1216 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1199                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1149 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1132                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1082 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1065                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1015 | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_998                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_948  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_931                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_881  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_864                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_814  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_797                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_747  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_730                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_680  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_663                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_613  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_596                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_546  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_529                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_479  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_231                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_181  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_164                  | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_114  | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_97                   | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_47   | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                      | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0      | C+A*B       | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |     4|
+|2     |DSP48E1  |    80|
+|3     |LUT1     |   162|
+|4     |LUT2     |  2783|
+|5     |LUT3     |  4070|
+|6     |LUT4     |  1423|
+|7     |LUT5     |  2836|
+|8     |LUT6     |  2486|
+|9     |MUXCY    |  2570|
+|10    |MUXF7    |   101|
+|11    |RAM16X1D |    81|
+|12    |RAM32X1D |    81|
+|13    |RAM64M8  |   504|
+|14    |RAM64X1D |    81|
+|15    |SRL16E   |   293|
+|16    |SRLC32E  |   133|
+|17    |XORCY    |   680|
+|18    |FDE      |   440|
+|19    |FDRE     | 10076|
+|20    |FDSE     |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:10 ; elapsed = 00:05:10 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:04 ; elapsed = 00:04:28 . Memory (MB): peak = 3143.973 ; gain = 1011.949
+Synthesis Optimization Complete : Time (s): cpu = 00:04:11 ; elapsed = 00:05:11 . Memory (MB): peak = 3143.973 ; gain = 1370.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4622 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1708 instances were transformed.
+  (CARRY4) => CARRY8: 441 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 80 instances
+  FDE => FDRE: 440 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 81 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 81 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 504 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 81 instances
+
+Synth Design complete | Checksum: 36829443
+INFO: [Common 17-83] Releasing license: Synthesis
+411 Infos, 177 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:56 ; elapsed = 00:06:30 . Memory (MB): peak = 3143.973 ; gain = 2470.957
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/design_1_cnn_accelerator_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3143.973 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_cnn_accelerator_0_0, cache-ID = 150ac177aff5c355
+INFO: [Coretcl 2-1174] Renamed 3064 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/student/Desktop/HackArm/zynq_cnn_hw/zynq_cnn_hw.runs/design_1_cnn_accelerator_0_0_synth_1/design_1_cnn_accelerator_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_cnn_accelerator_0_0_utilization_synth.rpt -pb design_1_cnn_accelerator_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3143.973 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 14 13:32:31 2026...

@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn.cpp"
+    ],
+    "file": "C:\\Users\\student\\Desktop\\HackArm\\cnn_accl\\cnn.cpp"
+  }
+]
